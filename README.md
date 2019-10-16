@@ -2,8 +2,8 @@
 
 ## requirements
 
-* pipenv
-* python 3.7
+* pipenv or pip
+* python 3.6+
 
 ## Installation
 
@@ -16,6 +16,7 @@
     * python -m venv myenv
     * source bin/activate
     * pip install -r requirements.txt
+* `export FLASK_APP=app.py`
 * `flask run`
 
 ## migrations
