@@ -7,7 +7,7 @@
 
 ## Installation
 
-* clone repo https://github.com/avallbona/flask-demo
+* clone repo https://github.com/avallbona/flask-sql-alchemy-demo
 * change to folder where you cloned the repo
 * with pipenv
     * `pipenv install`
