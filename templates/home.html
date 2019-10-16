@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>User list</h1>
+{%  for user in users %}
+    <li><strong>{{ user.id }}</strong> -
+        {{ user.username }}
+        {% if user.id == 1 %}
+            <strong>(oh, man!!!)</strong>
+        {% endif %}
+        <a href="{{ url_for('user_detail', user_id=user.id) }}">
+            Ver detalle
+        </a>
+         ---
+        <a href="/user-detail/{{ user.id }}">
+            Ver detalle a pincho
+        </a>
+
+    </li>
+{% endfor %}
+</body>
+</html>
